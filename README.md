@@ -1,16 +1,18 @@
-#  AI-Powered Coach Practice System
+# AI-Powered Coaching & Practice Interview System
 
+![SaaS](https://img.shields.io/badge/Product-Subscription--Based%20SaaS-0A9396?style=flat)
 ![AI](https://img.shields.io/badge/AI-Interview%20Coaching-7B61FF?style=flat)
 ![n8n](https://img.shields.io/badge/Automation-n8n-FF6D5A?style=flat&logo=n8n&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Frontend-Next.js-000000?style=flat&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/AI%20Processing-OpenAI-412991?style=flat&logo=openai&logoColor=white)
-![LlamaParse](https://img.shields.io/badge/Document%20Parsing-LlamaParse-6B4EFF?style=flat)
+![LlamaParse](https://img.shields.io/badge/Resume%20Parsing-LlamaParse-6B4EFF?style=flat)
 
 ---
 
 ## 📺 System Walkthrough
 
-🎥 Watch the complete demonstration of the AI Coach Practice System:
+🎥 Watch the complete demonstration of the AI Coaching & Practice Interview System:
 
 https://www.loom.com/share/ce6077592a2e4ce585092d8268c05152
 
@@ -18,30 +20,16 @@ https://www.loom.com/share/ce6077592a2e4ce585092d8268c05152
 
 ## 🚀 Project Overview
 
-The **AI-Powered Coach Practice System** helps candidates prepare for job interviews through personalized AI-generated questions, voice-based practice sessions, and instant AI feedback.
+The **AI-Powered Coaching & Practice Interview System** is a subscription-based SaaS product designed to help candidates prepare for real job interviews through personalized, AI-generated questions, voice-based practice sessions, and instant AI feedback.
 
-Candidates upload their resume, enter their personal details, and begin an interactive coaching session. The system processes their resume to generate targeted, experience-based interview questions, allowing candidates to practise speaking their answers and improve their interview readiness.
+Candidates can upload their resumes, enter their personal details, and start interactive coaching sessions. The system processes their resumes to generate targeted, experience-based questions, allowing them to practise speaking their answers and receive AI-powered insights to improve their interview performance.
 
-The platform combines an interactive AI coaching interface with automated n8n workflows for resume processing, candidate verification, question generation, and AI-powered evaluation.
+The platform combines an interactive AI coaching experience with automated n8n workflows for candidate validation, resume parsing, AI processing, and question generation.
 
 ---
+## 💼 SaaS Product Model
 
-## 🎯 System Purpose
-
-The primary objective is to help candidates prepare for real interviews by providing a personalized practice environment based on their resume and experience.
-
-**Key capabilities include:**
-
-- 📄 Resume / CV Upload
-- 🎯 Resume-Based Interview Questions
-- 🤖 AI-Powered Interview Coaching
-- 🎙️ Voice-Based Practice
-- 💬 Interactive Conversation Interface
-- ⏱️ Interview Session Time Tracking
-- 🧠 AI-Powered Answer Evaluation
-- 💡 Instant Feedback and Improvement Insights
-- 🔄 Automated Resume Processing
-- 🚫 Duplicate Candidate Checks
+A **subscription-based SaaS product for interview preparation**, providing candidates with personalized AI-generated interview questions, interactive voice practice sessions, and instant AI-powered feedback to help them improve their answers and prepare for real job interviews.
 
 ---
 
@@ -49,14 +37,14 @@ The primary objective is to help candidates prepare for real interviews by provi
 
 ### 1️⃣ AI Coach Landing Page & Resume Submission
 
-Candidates begin by visiting the AI Coach application and entering their details.
+Candidates begin by visiting the AI Coach application and entering their personal details.
 
 **Required information:**
 - Full Name
 - Email Address
 - Resume / CV Upload (PDF or DOCX)
 
-The system uses the uploaded resume to generate targeted, experience-based interview questions.
+The uploaded resume is used to generate targeted, experience-based interview questions.
 
 The landing page introduces three main features:
 
@@ -65,74 +53,31 @@ The landing page introduces three main features:
 - **💡 Instant Feedback:** Receive AI-powered insights to improve answers before the actual interview.
 
 <div align="center">
-  <img src="ai-coach-landing-page.jpeg" width="100%" alt="AI Coach Landing Page and Resume Submission"/>
+  <img src="https://raw.githubusercontent.com/muneebservices09/AI-Coaching-and-Practice-Interview-System/main/coaching%201.jpeg" width="100%" alt="AI Coach Landing Page and Resume Submission"/>
 </div>
 
 ---
 
 ### 2️⃣ Interactive AI Coaching Session
 
-After submitting their details and resume, candidates enter the AI coaching session.
+After submitting their details and resume, candidates enter the live AI coaching session.
 
-The interface provides an interactive practice environment with an AI coach avatar and a live conversation area.
+The interface provides an interactive practice environment featuring an AI coach avatar and a live conversation panel.
 
 **Session interface includes:**
 
 - AI Coach Video Interface
 - Live Conversation Panel
-- Candidate Information
 - Total Question Counter
 - Interview Session Timer
-- Start Interview Control
-- End Interview Control
 
-The displayed practice session includes **5 questions** and a **12-minute session duration**.
+The displayed session includes **5 practice questions** and a **12-minute session duration**.
 
 Candidates can practise answering questions through voice interaction in a simulated interview environment.
 
 <div align="center">
-  <img src="ai-coach-practice-session.jpeg" width="100%" alt="AI Coach Live Practice Session"/>
+  <img src="https://raw.githubusercontent.com/muneebservices09/AI-Coaching-and-Practice-Interview-System/main/coaching%202.jpeg" width="100%" alt="AI Coach Live Practice Session"/>
 </div>
-
----
-
-## 🔄 Complete System Workflow
-
-The system connects candidate registration, resume processing, AI question generation, and coaching preparation through automated workflows.
-
-```text
-Candidate Opens AI Coach Application
-                ↓
-         Enters Personal Details
-                ↓
-          Uploads Resume / CV
-                ↓
-         Application Webhook
-                ↓
-       Candidate Record Lookup
-                ↓
-       Existing Candidate Check
-                ↓
-       Candidate Status Validation
-                ↓
-        Resume Upload Processing
-                ↓
-          LlamaParse Processing
-                ↓
-         Resume Text Extraction
-                ↓
-          Resume Validation
-                ↓
-       OpenAI Structured Processing
-                ↓
-       AI Question & Answer Data
-                ↓
-         Coaching Session Setup
-                ↓
-       Interactive Voice Practice
-                ↓
-          AI-Powered Feedback
-```
 
 ---
 
@@ -147,26 +92,19 @@ When a candidate submits their information, the application sends the data to an
 The workflow handles:
 
 - Receiving candidate submission data.
-- Retrieving existing candidate records.
 - Checking candidate status.
-- Identifying existing submissions.
-- Managing candidate processing paths.
-- Responding to the application through webhooks.
+- Identifying existing submissions to avoid duplication.
+
 
 ### 4️⃣ Resume Parsing & Validation
 
-The uploaded resume is processed using LlamaParse.
+The uploaded resume is processed using **LlamaParse**.
 
 The workflow handles:
 
 - Uploading the resume for parsing.
-- Waiting for the parsing process to complete.
 - Retrieving extracted resume text.
-- Checking parsing status.
-- Validating extracted resume content.
-- Checking whether the extracted text meets the required length.
-
-This prepares structured resume information for the AI processing stage.
+- Validating extracted resume content to generate Questions.
 
 ### 5️⃣ AI-Powered Question Generation & Processing
 
@@ -177,43 +115,27 @@ The workflow uses structured JSON processing to organize AI-generated question a
 This supports personalized interview practice based on the candidate's resume and experience.
 
 <div align="center">
-  <img src="n8n-ai-coach-workflow.jpeg" width="100%" alt="Complete n8n AI Coach Workflow"/>
+  <img src="https://raw.githubusercontent.com/muneebservices09/AI-Coaching-and-Practice-Interview-System/main/coaching%20n8n%201.jpeg" width="100%" alt="Main n8n AI Coach Resume Processing Workflow"/>
 </div>
 
 ---
 
-### 6️⃣ Candidate Duplicate Prevention
+### 6️⃣ Candidate Validation & Duplicate Prevention
 
 The system includes a separate candidate validation workflow to check whether a candidate has already completed or submitted an existing coaching session.
 
 The workflow:
 
 - Receives candidate information through a webhook.
-- Retrieves existing candidate records.
-- Checks the candidate's status.
-- Merges and evaluates candidate information.
+- Checks candidate status.
 - Routes records based on their status.
 - Separates duplicate and non-duplicate submissions.
 
 This helps prevent duplicate candidate processing.
 
 <div align="center">
-  <img src="n8n-duplicate-check-workflow.jpeg" width="100%" alt="n8n Candidate Duplicate Prevention Workflow"/>
+  <img src="https://raw.githubusercontent.com/muneebservices09/AI-Coaching-and-Practice-Interview-System/main/coaching%20n8n%202.jpeg" width="100%" alt="n8n Candidate Duplicate Prevention Workflow"/>
 </div>
-
----
-
-## 🧠 Core Technical Pillars
-
-- **🤖 AI Interview Coaching:** Provides an AI-powered environment for interview preparation.
-- **📄 Resume-Based Personalization:** Uses uploaded resumes to generate targeted practice questions.
-- **🎙️ Voice Practice:** Allows candidates to practise speaking their answers.
-- **💡 AI Feedback:** Provides AI-powered insights to help candidates improve their responses.
-- **⚙️ Workflow Automation:** Uses n8n to coordinate candidate submissions and processing.
-- **📑 Resume Parsing:** Uses LlamaParse to extract information from uploaded documents.
-- **🧠 Structured AI Processing:** Uses OpenAI to process resume information and generate structured question and answer data.
-- **🔍 Candidate Validation:** Checks existing records and candidate status.
-- **🚫 Duplicate Prevention:** Identifies existing submissions before processing candidates again.
 
 ---
 
@@ -235,44 +157,44 @@ This helps prevent duplicate candidate processing.
 ## 🔄 System Architecture
 
 ```text
-             AI COACH APPLICATION
-                      ↓
-             Candidate Registration
-                      ↓
-               Resume Upload
-                      ↓
-                n8n Webhook
-                      ↓
-           Candidate Data Validation
-                      ↓
-             Duplicate Check
-                      ↓
-             Resume Processing
-                      ↓
-                 LlamaParse
-                      ↓
-            Extracted Resume Text
-                      ↓
-              Resume Validation
-                      ↓
-            OpenAI AI Processing
-                      ↓
-         Structured Questions & Answers
-                      ↓
-             AI COACH INTERFACE
-                      ↓
-          Interactive Practice Session
-                      ↓
-             Voice-Based Answers
-                      ↓
-              AI-Powered Feedback
+             AI COACH SAAS APPLICATION
+                       ↓
+              Candidate Registration
+                       ↓
+                Resume Upload
+                       ↓
+                 n8n Webhook
+                       ↓
+            Candidate Data Validation
+                       ↓
+               Duplicate Check
+                       ↓
+              Resume Processing
+                       ↓
+                  LlamaParse
+                       ↓
+             Extracted Resume Text
+                       ↓
+               Resume Validation
+                       ↓
+              OpenAI AI Processing
+                       ↓
+          Structured Questions & Answers
+                       ↓
+               AI COACH INTERFACE
+                       ↓
+           Interactive Practice Session
+                       ↓
+              Voice-Based Answers
+                       ↓
+               AI-Powered Feedback
 ```
 
 ---
 
 ## 🚀 Business Impact
 
-The system transforms traditional interview preparation into a personalized AI-powered practice experience.
+The platform transforms traditional interview preparation into a personalized, subscription-based AI coaching experience.
 
 ### Before Automation
 
@@ -280,7 +202,7 @@ The system transforms traditional interview preparation into a personalized AI-p
 
 ### After Automation
 
-**Upload Resume → Generate Targeted Questions → Start AI Coaching Session → Practise Through Voice → Receive AI Feedback → Improve Interview Answers**
+**Access AI Coach SaaS Platform → Upload Resume → Generate Targeted Questions → Start AI Coaching Session → Practise Through Voice → Receive AI Feedback → Improve Interview Answers**
 
 ### Key Benefits
 
@@ -289,17 +211,18 @@ The system transforms traditional interview preparation into a personalized AI-p
 - **💡 Immediate Insights:** Provides AI-powered feedback to support improvement.
 - **⏱️ Structured Sessions:** Organizes practice around a defined question count and session duration.
 - **⚙️ Automated Processing:** Reduces manual work involved in resume preparation and question generation.
+- **☁️ SaaS Accessibility:** Makes AI-powered interview coaching available through an online platform.
 - **🚀 Interview Readiness:** Helps candidates prepare more effectively for actual job interviews.
 
 ---
 
 ## 📌 Key Result
 
-The AI-Powered Coach Practice System connects resume parsing, personalized question generation, voice-based practice, and AI-powered feedback in one automated platform.
+Developed an **AI-powered, subscription-based SaaS coaching platform** that connects resume parsing, personalized interview question generation, voice-based practice, and AI-powered feedback in one automated solution.
 
-**Resume Upload → Resume Parsing → AI Question Generation → Interactive Voice Practice → AI Feedback → Interview Preparation**
+**SaaS Platform → Resume Upload → Resume Parsing → AI Question Generation → Interactive Voice Practice → AI Feedback → Interview Preparation**
 
-The result is an AI-powered coaching experience that helps candidates practise with questions relevant to their experience and improve their confidence before real interviews.
+The platform provides candidates with an accessible and personalized interview preparation experience while delivering the underlying processing through automated AI workflows.
 
 ---
 
